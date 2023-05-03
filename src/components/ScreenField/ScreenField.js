@@ -7,7 +7,7 @@ function ScreenField(props) {
     // }
 
     return (
-        <input className='input-group-text mb-3' />
+        <input className='form-control mb-3 border border-primary text-end' />
     )
 }
 
