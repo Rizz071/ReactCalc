@@ -1,13 +1,9 @@
 import React from 'react';
 
 
-function ScreenField(props) {
-    // function handleClick() {
-    //     alert('You clicked me!')
-    // }
-
+function ScreenField({ screenText }) {
     return (
-        <input className='form-control mb-3 border border-primary text-end' />
+        <input className='form-control mb-3 fs-3 border border-primary text-end' type='text' value={screenText} readOnly />
     )
 }
 

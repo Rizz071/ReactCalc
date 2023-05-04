@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-function BtnAction(props) {
+function BtnAction({ sign, handleBtnActionClick }) {
     // function handleClick() {
     //     alert('You clicked me!')
     // }
 
     return (
-        <button className='btn btn-primary btn-lg m-1'>{props.sign}</button>
+        <button className='btn btn-primary btn-lg m-1' onClick={event => handleBtnActionClick(event, sign)}>{sign}</button>
     )
 }
 

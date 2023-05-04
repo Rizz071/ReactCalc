@@ -2,13 +2,9 @@ import React from 'react';
 
 
 
-function BtnNum(props) {
-    // function handleClick() {
-    //     alert('You clicked me!')
-    // }
-
+function BtnNum({ num, handleBtnNumClickFunction }) {
     return (
-        <button className='btn btn-primary btn-lg m-1'>{props.num}</button>
+        <button className='btn btn-primary btn-lg m-1' onClick={event => handleBtnNumClickFunction(event, num)}>{num}</button>
     )
 }
 
