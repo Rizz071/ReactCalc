@@ -21,15 +21,15 @@ function MainCalcPad() {
                         <div className='col-auto mb-3'>
                             <NumPad />
                         </div>
-                        <div className='col-auto mb-3'>
-                            <BtnAction className="btn btn-outline-primary" sign='+' /><br />
-                            <BtnAction sign='-' /><br />
-                            <BtnAction sign='X' /><br />
-                            <BtnAction sign='/' /><br />
+                        <div className='col mb-3'>
+                            <BtnAction sign='&#43;' /><br />
+                            <BtnAction sign='&#8722;' /><br />
+                            <BtnAction sign='&#215;' /><br />
+                            <BtnAction sign='&#247;' /><br />
 
                         </div>
-                        <div className='col-auto mb-3'>
-                            <BtnAction sign='=' /><br />
+                        <div className='col mb-3'>
+                            <BtnAction sign='&#61;' /><br />
                         </div >
                     </div>
                 </div></div>
