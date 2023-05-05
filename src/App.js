@@ -1,17 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
-import BtnNum from './components/BtnNum/BtnNum';
-import NumPad from './components/NumPad/NumPad';
-import MainCalcPad from './components/MainCalcPad/MainCalcPad';
+import MainCalcPad from './components/Calculator/MainCalcPad/MainCalcPad';
+import Navbar from './components/Navigation/Navbar';
 
 function App() {
   return (
     <div className="App">
-
-      <MainCalcPad />
-
-    </div>
+      <Navbar />
+      <div className='container'>
+        <div className='row justify-content-center'>
+          <MainCalcPad />
+          <MainCalcPad />
+          <MainCalcPad />
+        </div>
+      </div>
+    </div >
   );
 }
 
