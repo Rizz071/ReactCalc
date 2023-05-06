@@ -3,12 +3,13 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/esm/Button';
 import Form from 'react-bootstrap/Form';
 
 
-const NavbarMain = ({ num_calc, setCalcNumberFunction }) => {
+const NavbarMain = (props) => {
+    const { num_calc, setCalcNumberFunction } = props
+
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
@@ -26,11 +27,11 @@ const NavbarMain = ({ num_calc, setCalcNumberFunction }) => {
                     </Nav>
                     <Nav>
                         <Button className="mx-3" variant="outline-light"><i className="bi bi-box-arrow-in-right"></i> Log In</Button>
-                        <Button variant="outline-light"><i class="bi bi-pencil-square"></i> Sign Up</Button>
+                        <Button variant="outline-light"><i className="bi bi-pencil-square"></i> Sign Up</Button>
                     </Nav>
                 </Navbar.Collapse>
-            </Container>
-        </Navbar>
+            </Container >
+        </Navbar >
     );
 }
 

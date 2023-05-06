@@ -1,18 +1,20 @@
 import React from 'react';
 
+import { Fragment } from 'react';
+
 import MainCalcPad from '../MainCalcPad/MainCalcPad';
 
 
 
 
-function CalcComponent({ num_calc }) {
+const CalcComponent = (props) => {
+    const { num_calc } = props
+
     const calcArray = []
 
     const buildCalcs = () => {
-        console.log(num_calc)
         for (let i = 1; i <= num_calc; i++) {
-            calcArray.push(<MainCalcPad />)
-            console.log(i)
+            calcArray.push( <Fragment key={i*i}><MainCalcPad /> </Fragment>)
         }
         return calcArray
     }

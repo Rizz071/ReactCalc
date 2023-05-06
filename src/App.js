@@ -1,7 +1,6 @@
 import './App.css';
 
-import MainCalcPad from './components/Calculator/MainCalcPad/MainCalcPad';
-import Navbar from './components/Navigation/NavbarMain';
+import NavbarMain from './components/Navigation/NavbarMain';
 import CalcComponent from './components/Calculator/CalcComponent/CalcComponent';
 import { useState } from 'react';
 
@@ -32,7 +31,7 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar num_calc={num_calc} setCalcNumberFunction={setCalcNumber} />
+      <NavbarMain num_calc={num_calc} setCalcNumberFunction={setCalcNumber} />
 
       <CalcComponent num_calc={num_calc} />
 
