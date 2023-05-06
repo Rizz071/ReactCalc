@@ -12,8 +12,6 @@ let flag = 0;
 
 function MainCalcPad() {
 
-
-
     const [screenText, setScreenText] = useState(0)
 
     function handleBtnNumClick(event, numBtn) {
@@ -62,16 +60,12 @@ function MainCalcPad() {
             oldAction = Action;
             Action = '';
         }
-
-
     }
 
-
     return (
-
         <div className='col-auto border border-primary shadow-lg bg-body rounded m-4'>
-            <div className='row justify-content-center'>
-                <div className='col mt-5'>
+            <div className='row  justify-content-center'>
+                <div className='col-auto mt-5'>
                     <ScreenField screenText={screenText} />
                 </div>
             </div>
@@ -80,15 +74,15 @@ function MainCalcPad() {
                 <div className='col-auto mb-3'>
                     <NumPad handleBtnNumClickFunction={handleBtnNumClick} />
                 </div>
-                <div className='col mb-3'>
+                <div className='col-auto mb-3'>
                     <BtnAction sign='&#43;' handleBtnActionClick={handleBtnActionClick} /><br />
                     <BtnAction sign='&#8722;' handleBtnActionClick={handleBtnActionClick} /><br />
                     <BtnAction sign='&#215;' handleBtnActionClick={handleBtnActionClick} /><br />
                     <BtnAction sign='&#247;' handleBtnActionClick={handleBtnActionClick} /><br />
 
                 </div>
-                <div className='col mb-3'>
-                    <BtnAction sign='&#61;' handleBtnActionClick={handleBtnActionClick} /><br />
+                <div className='col-auto mb-3'>
+                    <BtnAction sign='&#61;' handleBtnActionClick={handleBtnActionClick} />
                 </div >
             </div>
         </div>
