@@ -1,13 +1,10 @@
 import React from 'react';
+import Button from 'react-bootstrap/esm/Button';
 
 
 function BtnAction({ sign, handleBtnActionClick }) {
-    // function handleClick() {
-    //     alert('You clicked me!')
-    // }
-
     return (
-        <button className='btn btn-primary m-1' onClick={event => handleBtnActionClick(event, sign)}>{sign}</button>
+        <Button variant="primary" type="button" size="" className='my-1' onClick={event => handleBtnActionClick(event, sign)}>{sign}</Button>
     )
 }
 

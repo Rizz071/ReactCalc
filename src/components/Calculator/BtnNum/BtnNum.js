@@ -1,10 +1,11 @@
 import React from 'react';
+import Button from 'react-bootstrap/esm/Button';
 
 
 
 function BtnNum({ num, handleBtnNumClickFunction }) {
     return (
-        <button className='btn btn-primary m-1' onClick={event => handleBtnNumClickFunction(event, num)}>{num}</button>
+        <Button variant="primary" type="button" size="" className='m-1' onClick={event => handleBtnNumClickFunction(event, num)}>{num}</Button>
     )
 }
 
