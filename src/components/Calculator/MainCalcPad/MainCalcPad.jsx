@@ -76,14 +76,14 @@ function MainCalcPad() {
     }
 
     return (
-        <Container className='col-auto border border-primary shadow bg-body rounded m-4' style={{width: '300px'}}>
-            <Row className='justify-content-center'>
-                <Col className='col-auto  m-0 p-0 mt-5'>
+        <Container className='col-auto border border-primary shadow bg-body rounded p-4 mt-5'>
+            <Row className='justify-content-center m-0 p-0'>
+                <Col className='col-auto m-0 p-0 mt-4 mb-3'>
                     <ScreenField screenText={screenText} />
                 </Col>
             </Row>
 
-            <Row className='justify-content-between m-0 p-2'>
+            <Row className='justify-content-between m-0 p-0'>
                 <Col className='col-auto m-0 p-0'>
                     <NumPad handleBtnNumClickFunction={handleBtnNumClick} />
                 </Col>

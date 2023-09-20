@@ -24,8 +24,8 @@ function NumPad({ handleBtnNumClickFunction }) {
 
     return (
 
-        <Container>
-            <Row>
+        <Container className='m-0 p-0'>
+            <Row className='m-0 p-0 justify-content-between'>
                 <Col className='col-auto m-0 p-0'>
                     <div className="d-grid">
                         <BtnNum num={'7'} handleBtnNumClickFunction={handleBtnNumClickFunction} />
