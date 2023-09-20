@@ -19,7 +19,6 @@ function MainCalcPad() {
     const [screenText, setScreenText] = useState(0)
 
     function handleBtnNumClick(event, numBtn) {
-
         if (Action !== '' && flag === 1) {
             setScreenText(String(numBtn))
             flag = 0
@@ -30,9 +29,6 @@ function MainCalcPad() {
         else {
             setScreenText(Number(String(screenText) + String(numBtn)))
         }
-
-
-
     }
 
 
@@ -76,7 +72,7 @@ function MainCalcPad() {
     }
 
     return (
-        <Container className='col-auto border border-primary shadow bg-body rounded p-4 mt-5'>
+        <Container className='col-auto border border-primary shadow bg-body rounded p-4 my-5'>
             <Row className='justify-content-center m-0 p-0'>
                 <Col className='col-auto m-0 p-0 mt-4 mb-3'>
                     <ScreenField screenText={screenText} />
