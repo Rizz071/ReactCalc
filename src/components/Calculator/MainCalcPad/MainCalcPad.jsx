@@ -1,11 +1,15 @@
 import React from 'react';
 import { useState } from 'react';
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 import NumPad from '../NumPad/NumPad';
 import BtnAction from '../BtnAction/BtnAction';
 import ScreenField from '../ScreenField/ScreenField';
 
-let Num;
+let Num
 let Action = ''
 let oldAction = ''
 let flag = 0
@@ -72,30 +76,31 @@ function MainCalcPad() {
     }
 
     return (
-        <div className='col-auto border border-primary shadow bg-body rounded m-4'>
-            <div className='row justify-content-center'>
-                <div className='col-auto mt-5'>
+        <Container className='col-auto border border-primary shadow bg-body rounded m-4' style={{width: '300px'}}>
+            <Row className='justify-content-center'>
+                <Col className='col-auto  m-0 p-0 mt-5'>
                     <ScreenField screenText={screenText} />
-                </div>
-            </div>
+                </Col>
+            </Row>
 
-            <div className='row justify-content-center'>
-                <div className='col-auto mb-3'>
+            <Row className='justify-content-between m-0 p-2'>
+                <Col className='col-auto m-0 p-0'>
                     <NumPad handleBtnNumClickFunction={handleBtnNumClick} />
-                </div>
-                <div className='col-auto mb-3'>
+                </Col>
+                <Col  className='col-auto m-0 p-0'>
                     <BtnAction sign='&#43;' handleBtnActionClick={handleBtnActionClick} /><br />
                     <BtnAction sign='&#8722;' handleBtnActionClick={handleBtnActionClick} /><br />
                     <BtnAction sign='&#215;' handleBtnActionClick={handleBtnActionClick} /><br />
                     <BtnAction sign='&#247;' handleBtnActionClick={handleBtnActionClick} /><br />
-                </div>
-                <div className='col-auto mb-3'>
+                </Col>
+                <Col  className='col-auto m-0 p-0'>
                     <BtnAction sign='C' handleBtnActionClick={handleBtnActionClick} /><br />
                     {/* <BtnAction sign='CE' handleBtnActionClick={handleBtnActionClick} /><br /> */}
                     <BtnAction sign='&#61;' handleBtnActionClick={handleBtnActionClick} />
-                </div >
-            </div>
-        </div>
+                </Col >
+            </Row>
+        </Container>
+
     )
 }
 

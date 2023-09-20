@@ -21,12 +21,12 @@ const NavbarMain = (props) => {
                         <Nav.Link href="#pricing">Features</Nav.Link>
                         <Nav.Link href="#pricing">About</Nav.Link>
                     </Nav>
-                    <Nav className="ms-auto">
-                        <Form.Label className="text-white mx-3 my-auto" htmlFor="inputPassword5">Amount</Form.Label>
-                        <Form.Control className="w-25 text-end fs-6" size="sm" value={num_calc} onChange={event => setCalcNumberFunction(event, event.target.value)} type="number" />
+                    <Nav className="p-3 p-lg-0">
+                        <Form.Label className="text-white my-auto" htmlFor="inputPassword5">Amount</Form.Label>
+                        <Form.Control className="mx-auto mx-lg-3 w-25 text-end fs-6" size="sm" value={num_calc} onChange={event => setCalcNumberFunction(event, event.target.value)} type="number" />
                     </Nav>
-                    <Nav>
-                        <Button className="mx-3" variant="outline-light"><i className="bi bi-box-arrow-in-right"></i> Log In</Button>
+                    <Nav className=""> 
+                        <Button className="mx-3 my-3 my-lg-auto" variant="outline-light"><i className="bi bi-box-arrow-in-right"></i> Log In</Button>
                         <Button variant="outline-light"><i className="bi bi-pencil-square"></i> Sign Up</Button>
                     </Nav>
                 </Navbar.Collapse>
